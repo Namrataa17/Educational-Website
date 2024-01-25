@@ -8,31 +8,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <script>
-      
+       
         function updateCountdown() {
-            const endDate = new Date("2024-12-31T15:15:15Z");
+            const endDate = new Date("2024-12-31T12:12:12Z"); 
             const now = new Date();
             const timeDifference = endDate - now;
-
+    
             if (timeDifference > 0) {
                 const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
                 const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
                 const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
-
+    
                 document.getElementById("days").innerText = days;
-                document.getElementById("hours").innerText = hours;
-                document.getElementById("minutes").innerText = minutes;
-                document.getElementById("seconds").innerText = seconds;
-            } else {
+                document.getElementById("hours").innerText = hours + " Hours";
+                document.getElementById("minutes").innerText = minutes + " Minutes";
+                document.getElementById("seconds").innerText = seconds + " Seconds";
               
+                document.getElementById("days").classList.add("date");
+                document.getElementById("hours").classList.add("date");
+                document.getElementById("minutes").classList.add("date");
+                document.getElementById("seconds").classList.add("date");
+            } else {
+             
                 document.getElementById("timer").innerHTML = "Timer Expired";
             }
-        }
+        } 
         setInterval(updateCountdown, 1000);
-
         updateCountdown();
     </script>
+    
 </head>
 <body>
     <!--Navigation Bar-->
@@ -229,10 +234,10 @@
             <p>Get 100 Online Courses For Free</p>
             <h1>Register To Get It</h1>
             <div class="time">
-                <div class="date" id="days">0<br>Days</div>
+                <div class="date" id="days"></div>
                 <div class="date" id="hours">0<br>Hours</div>
                 <div class="date" id="minutes">0<br>Minutes</div>
-                <div class="date" id="seconds">0<br>Seconds</div>
+                <div class="date" id="seconds">0<br>Seconds</div>   
             </div>
         </div>
         </div>
