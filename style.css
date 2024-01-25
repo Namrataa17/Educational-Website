@@ -31,14 +31,14 @@ nav
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    padding:1vw 8vw;
+    padding:10px 8vw;
     align-items: center;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.15);
     z-index: 999;
 }
 nav img
 {
-    width:150px;
+    width:80px;
     cursor:pointer;
     
     
@@ -57,13 +57,13 @@ nav .navigation ul li
 nav .navigation ul li a
 {
     text-decoration: none;
-    color:rgb(21,21,100);
+    color:#0F1035;
     font-size: 16px;
     font-weight: 500;
     transition: 0.3s ease;
 }
 nav .navigation ul li a:hover{
-    color:yellow;
+    color:#7FC7D9;
 }
 #home
 {
@@ -108,26 +108,26 @@ nav .navigation ul li a:hover{
 }
 #home a.blue
 {
-    color:white;
-    background-color: darkblue;
+    color:#DCF2F1;
+    background-color: #365486;
 }
 #home a.blue:hover
 {
-    color:darkblue;
-    background-color:white;
+    color:#365486;
+    background-color:#DCF2F1;
     transition: 0.3s ease;
 }
 
 #home a.yellow
 {
-    color:white;
-    background-color: rgb(180, 180, 4);
+    color:#365486;
+    background-color: #DCF2F1;
     transition: 0.3s ease;
 }
 #home a.yellow:hover
 {
-    color:rgb(180, 180, 4);
-    background-color: white;
+    color:#DCF2F1;
+    background-color: #365486;
 }
 /*features */
 #features
@@ -197,14 +197,14 @@ nav .navigation ul li a:hover{
 }
 #course .courses .details i
 {
-    color:rgb(180, 180, 4);
+    color:#FDE767;
 
     font-size: 0.9rem;
 }
 #course .courses .cost
 {
-    background-color: darkblue;
-    color:white;
+    background-color: #0F1035;
+    color:#7FC7D9;
     line-height: 70px;
     width:70px;
     height:70px;
@@ -217,7 +217,7 @@ nav .navigation ul li a:hover{
 #registration
 {
     padding:6vw 8vw 6vw 8vw;
-    background-image: linear-gradient(rgba(99,112,168,0.5), rgba(81,91,233,0.5));
+    background-image: linear-gradient(rgb(15, 16, 53), rgb(54, 84, 134));
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -250,7 +250,7 @@ nav .navigation ul li a:hover{
 }
 #registration .form
 {
-    background: white;
+    background: rgb(220, 242, 241);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -261,8 +261,9 @@ nav .navigation ul li a:hover{
 {
     margin:15px 0;
     padding:15px 10px;
-    border:1px solid rgb(84,40,241);
+    border:5px solid rgb(54, 84, 134);
     outline: none;
+    border-radius: 8px;
 }
 #registration .form a.yellow
 {
@@ -273,12 +274,12 @@ nav .navigation ul li a:hover{
     font-weight: 600;
     border-radius: 5px;
     color:white;
-    background-color: rgb(180, 180, 4);
+    background-color: rgb(54, 84, 134);
     transition: 0.3s ease;
 }
 #registration .form a.yellow:hover
 {
-    color:rgb(180, 180, 4);
+    color:rgb(54, 84, 134);
     background-color: white;
 }
 #registration .form .btn
@@ -305,7 +306,7 @@ nav .navigation ul li a:hover{
 }
 #experts .expert-box .profile
 {
-    background: #fafaf1;
+    background: rgba(220, 242, 241,0.3);
     padding:30px 10px;
 }
  .pro-links
@@ -328,7 +329,7 @@ nav .navigation ul li a:hover{
 footer
 {
     padding:8vw;
-    background-color: #101C32;
+    background-color: #0F1035;
     display:flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -380,14 +381,14 @@ footer .subscribe a
     text-decoration: none;
     font-size: 0.9rem;
     padding: 12px 15px;
-    background-color: white;
+    background-color: #DCF2F1;
     font-weight: 600;
     color:darkblue;
 }
 footer .subscribe a.yellow
 {
-    color:white;
-    background-color: rgb(180, 180, 4);
+    color:#334F6C;
+    background-color: #7FC7D9;
     transition: 0.3s ease;
 }
 footer .subscribe a.yellow:hover
@@ -415,13 +416,13 @@ footer .copyright .pro-links i
     border:1px solid rgb(21,21,100);
     cursor: pointer;
     transition: 0.3s ease;
-    background:gray;
-    color:white;
+    background:#7FC7D9;
+    color:#334F6C;
     font-size: 1.5rem;
 }
 footer .copyright .pro-links i:hover{
-    background:rgb(180, 180, 4);
-    color:white;
+    background:#334F6C;
+    color:#DCF2F1;
     border:1px solid rgb(21,21,100);
 }
 
